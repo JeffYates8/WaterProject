@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { Project } from './types/Project';
 
 function ProjectList () {
-
     const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(() => {
