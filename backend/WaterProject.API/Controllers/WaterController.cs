@@ -35,12 +35,12 @@ namespace WaterProject.API.Controllers
                 .Take(pageSize)
                 .ToList();
 
-            var totalNumOfProjects = _waterContext.Projects.Count();
+            var totalNumProjects = _waterContext.Projects.Count();
 
             var someObject = new
             {
                 Projects = something,
-                TotalNumOfProjects = totalNumOfProjects
+                TotalNumProjects = totalNumProjects
             };
 
             return Ok(someObject);

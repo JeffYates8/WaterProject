@@ -47,11 +47,11 @@ function ProjectList () {
 
             <button disabled={pageNum === 1} onClick={() => setPageNum(pageNum - 1)}>Previous</button>
 
-            {/* {[...Array(totalPages)].map((_, i) => (
+            {[...Array(totalPages)].map((_, i) => (
                 <button key={i + 1} onClick={() => setPageNum(i + 1)} disabled={pageNum === (i + 1)}>
                   {i + 1}
                 </button>
-            ))} */}
+            ))}
 
             <button disabled={pageNum === totalPages} onClick={() => setPageNum(pageNum + 1)}>Next</button>
 
